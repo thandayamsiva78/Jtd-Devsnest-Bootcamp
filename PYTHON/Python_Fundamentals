@@ -1,0 +1,54 @@
+#1. Input:
+#     World
+# Output:
+#     Hello, World
+
+user_name=input()
+print("Hello,",user_name)
+
+#2.Input:
+#     4
+# Output:
+#     7
+
+num=int(input())
+print(num+3)
+
+#3. Input:
+#     4
+# Output:
+#     1
+
+num=int(input())
+print(num-3)
+
+#4. Input:
+#     4
+# Output:
+#     12
+
+def function(num):
+    print(num*3)
+num=int(input())
+function(num)
+
+#5. Input:
+#     6
+# Output:
+#     2.0
+
+num=int(input())
+divided_value=3
+print(num/divided_value)
+
+#6. Input:
+#     4
+# Output:
+#     1
+
+num=int(input())
+print(num%3)
+
+#7. Write a program to print “Devsnest!!” on the screen.
+
+print("Devsnest!!")

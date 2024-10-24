@@ -1,0 +1,163 @@
+# Input:
+#     10
+#     4
+#     7
+# Output:
+#     10
+
+num1=int(input())
+num2=int(input())
+num3=int(input())
+
+if num1 >= num2 and num1 >= num3:
+    print(num1)
+elif num2 >= num3 and num2 >= num1:
+    print(num2)
+else:
+    print(num3)
+
+# Input:
+#     32
+#     11
+# Output:
+#     32
+
+a = int(input())
+b = int(input())
+
+if a > b:
+    print(a)
+else:
+    print(b)
+
+# Input:
+#     add
+#     10 
+#     3
+# Output:
+#     13
+
+operators = input()
+a =int(input())
+b =int(input())
+
+if operators == "add":
+    print(a+b)
+elif operators == "subtract":
+    print(a-b)
+elif operators == "multiply":
+    print(a*b)
+elif operators == "divide":
+    if b==0:
+        print("cannot be divided by zero")
+    else:
+        print(a/b)  
+        
+else:
+    print("invalid input, Let's check once again...")
+
+# Input:
+#     4
+#     5
+# Output:
+#     False
+
+num1=int(input())
+num2=int(input())
+if num1==num2:
+    print("True")
+else:
+    print("False")
+
+# Input:
+#     4
+#     5
+# Output:
+#     True
+
+a = int(input())
+b = int(input())
+if a != b:
+    print("True")
+else:
+    print("False")
+
+# Input:
+#     45
+#     30
+# Output:
+#     Student passed!
+
+score = int(input())
+threshold = int(input())
+if score > threshold:
+    print("Student passed!")
+else:
+    print("Student failed!")
+
+# Input:
+#     55
+# Output:
+#     The number is less than 100
+
+number=int(input())
+if number < 100:
+    print("The number is less than 100")
+elif number == 100:
+    print("The number is equal to 100")
+else:
+    print("The number is greater than 100")
+    
+
+# Input:
+#     35
+#     citizen
+# Output:
+#     You are eligible to vote.
+
+age = int(input())
+citizenship_status = input()
+
+if age >= 18 and citizenship_status == "citizen":
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+
+# Input:
+#     300
+#     False
+# Output:
+#     You are eligible for free shipping.
+
+totelOrderAmount =int(input())
+premiumMember =input()
+
+if totelOrderAmount >= 50 or premiumMember == "True":
+    print("You are eligible for free shipping.")
+else:
+    print("You are not eligible for free shipping.")
+
+# Input:
+#     25
+# Output:
+#     300
+
+age = int(input())
+print(f"{age*12}")
+
+# Write a program that takes three integer inputs from the user representing the lengths of the sides of a triangle. The program should determine and print whether the triangle is equilateral, isosceles, scalene, or not a valid triangle.
+
+# Print Equilateral triangle if all sides are equal in length, Isosceles triangle if exactly two sides are equal, Scalene triangle if all sides have different lengths, and Not a valid triangle! if the inputs cannot form a valid triangle.
+
+a=int(input())
+b=int(input())
+c=int(input())
+if a+b<=c or a+c<=b or b+c<=a:
+    print("Not a valid triangle!")
+elif a==b==c:
+    print("Equilateral triangle")
+elif a==b or b==c or c==a:
+    print("Isosceles triangle")
+else:
+    print("Scalene triangle")
+
